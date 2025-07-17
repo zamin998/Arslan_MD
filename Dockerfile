@@ -1,20 +1,16 @@
-# ✅ Base image - official Node.js
-FROM node:18
+FROM node:lts-buster
 
-# ✅ Set working directory
-WORKDIR /usr/src/app
+# Clone bot from GitHub
+RUN git clone https://github.com/Arslan-MD/Arslan_MD.git /root/arslan-bot
 
-# ✅ Copy only package.json to install dependencies
-COPY package.json ./
+# Set working directory
+WORKDIR /root/arslan-bot
 
-# ✅ Install dependencies without lockfile
-RUN npm install
+# Install dependencies
+RUN npm install && npm install -g pm2
 
-# ✅ Copy all remaining bot files
-COPY . .
+# Expose port
+EXPOSE 9090
 
-# ✅ Expose port (optional, if using express or API)
-EXPOSE 3000
-
-# ✅ Start the bot with server.js
-CMD ["node", "index.js"]
+# Start the bot
+CMD ["npm", "start"]
