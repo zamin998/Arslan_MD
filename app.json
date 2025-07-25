@@ -1,7 +1,7 @@
 {
   "name": "Arslan_MD",
   "description": "Javascript WhatsApp bot made by ArslanMD Official",
-  "logo": "https://i.ibb.co/4ZSYvPTq/lordali.jpg",
+  "logo": "https://files.catbox.moe/yj7zp0.png",
   "keywords": ["Arslan_MD"],
   "success_url": "/",
 
@@ -137,7 +137,7 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "https://i.ibb.co/4ZSYvPTq/lordali.jpg"
+      "value": "https://files.catbox.moe/yj7zp0.png"
     },
     
      "DESCRIPTION": {
