@@ -16,7 +16,7 @@ cmd({
     if (!isOwner) return reply("This command is only for the bot owner.");
 
     try {
-        await reply("🔍 Checking for HASI-MD updates...");
+        await reply("🔍 Checking for Arslan-MD updates...");
 
         // Fetch the latest commit hash from GitHub
         const { data: commitData } = await axios.get("https://api.github.com/repos/Arslan-MD/Arslan_MD/commits/main");
